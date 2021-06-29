@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ankur Shah"
+		]
+	},
+	"spetokenauth-desc": "Provides authentication using Encrypted SPE Token",
+	"destroysession-desc": "Logout User",
+	"destroysession": "Logout Locally",
+	"specialpages-group-users": "Logout Locally"
+}

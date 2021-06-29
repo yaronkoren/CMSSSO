@@ -1,0 +1,33 @@
+{
+	"name": "SPETokenAuth",
+	"version": "1.0.0 unstable",
+	"author": [
+		"[https://www.spe.org Ankur Shah]"
+	],
+	"url": "https://spe.org",
+	"descriptionmsg": "spetokenauth-desc",
+	"type": "other",
+	"MessagesDirs": {
+		"SPETokenAuth": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SPETokenAuthentication": "SPETokenAuth.php",
+		"SPETokenAuthenticationHooks": "SPETokenAuthenticationHooks.php",
+		"DestroySession": "SpecialPages/DestroySession.php"
+	},
+	"SpecialPages": {
+		"DestroySession": "DestroySession"
+	},
+	"manifest_version": 1,
+	"config": {
+		"PluggableAuth_Class": "SPETokenAuthentication"
+	},
+	"Hooks": {
+		"AuthRemoteuserFilterUserName": "SPETokenAuthenticationHooks::onAuthRemoteuserFilterUserName",
+		"UserLoggedIn": "SPETokenAuthenticationHooks::onUserLoggedIn",
+		"LocalUserCreated": "SPETokenAuthenticationHooks::onLocalUserCreated",
+		"PersonalUrls": "SPETokenAuthenticationHooks::onPersonalUrls"
+	}
+}

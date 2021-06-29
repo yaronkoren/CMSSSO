@@ -1,0 +1,27 @@
+{
+	"name": "SPECustom",
+	"version": "1.0.0 unstable",
+	"author": [
+		"[https://www.spe.org Ankur Shah]"
+	],
+	"url": "https://spe.org",
+	"descriptionmsg": "specustom-desc",
+	"type": "other",
+	"MessagesDirs": {
+		"SPECustom": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SPEHelperMethods": "SPEHelperMethods.php",
+		"SPEUserHelperMethods": "SPEUserHelperMethods.php",
+		"SPECustomer":"models/SPECustomer.php",
+		"SpeCustomHooks": "SpeCustomHooks.php"
+	},
+	"Hooks":{
+		"SkinTemplateOutputPageBeforeExec":"SpeCustomHooks::onSkinTemplateOutputPageBeforeExec",
+		"LinkBegin": "SpeCustomHooks::onLinkBegin",
+		"PersonalUrls":"SpeCustomHooks::onPersonalUrls"
+	},
+	"manifest_version": 1
+}

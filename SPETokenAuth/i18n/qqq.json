@@ -1,0 +1,10 @@
+{
+  "@metadata": {
+    "authors": [
+      "Ankur Shah"
+    ]
+  },
+  "destroysession": "Destroy Session",
+  "myextension-desc": "{{desc}}",
+  "myextension-summary": "Destroy user session"
+}
